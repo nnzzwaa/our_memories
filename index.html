@@ -23,14 +23,14 @@ video{width:100%;border-radius:16px;margin-top:22px;display:none}
 </head>
 <body>
 <div class="container">
-  <h1>🎁 A Little Surprise For You</h1>
+  <h1>Press play & relive the memories🎞️</h1>
   <p>Scan it. Open it. Keep the memory. ♡</p>
-  <button id="openBtn" onclick="openVideo()">▶ BUKA VIDEO</button>
+  <button id="openBtn" onclick="openVideo()">▶ OPEN THIS LITTLE MEMORY</button>
   <video id="video" controls playsinline>
     <source src="video.mp4" type="video/mp4">
     Browser kamu tidak mendukung video.
   </video>
-  <div class="note">Turn up your volume 🔊</div>
+  <div class="note">FOR THE FULL EXPERIENCE, LISTEN WITH SOUND</div>
 </div>
 <script>
 function openVideo(){
@@ -41,5 +41,126 @@ function openVideo(){
   v.play().catch(()=>{ v.controls=true; });
 }
 </script>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Memories 🤍</title>
+
+    <style>
+        body {
+            margin: 0;
+            padding: 30px 20px;
+            background: #f8f5f2;
+            color: #4a4542;
+            font-family: Georgia, serif;
+            text-align: center;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: auto;
+        }
+
+        h1 {
+            font-size: 32px;
+            margin-bottom: 8px;
+        }
+
+        .subtitle {
+            font-size: 15px;
+            color: #8a817c;
+            margin-bottom: 30px;
+        }
+
+        video {
+            width: 100%;
+            max-width: 760px;
+            border-radius: 15px;
+            display: block;
+            margin: 0 auto 35px;
+        }
+
+        .story {
+            background: white;
+            padding: 30px;
+            border-radius: 18px;
+            line-height: 1.9;
+            font-size: 16px;
+            text-align: left;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.06);
+        }
+
+        .story h2 {
+            text-align: center;
+            margin-top: 0;
+            margin-bottom: 20px;
+        }
+
+        .story p {
+            margin-bottom: 18px;
+        }
+
+        .ending {
+            text-align: center;
+            margin-top: 30px;
+            color: #8a817c;
+            font-style: italic;
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="container">
+
+    <h1>Our Memories 🤍</h1>
+
+    <div class="subtitle">
+        a little place for our precious memories
+    </div>
+
+    <video controls>
+        <source src="video.mp4" type="video/mp4">
+        Browser kamu tidak mendukung video.
+    </video>
+
+    <div class="story">
+
+        <h2>Thank You For The Memories</h2>
+
+        <p>
+            Terima kasih untuk setiap cerita, tawa, dan kebersamaan yang hadir selama perjalanan ini.
+        </p>
+
+        <p>
+            Mungkin waktunya tidak terlalu lama, tetapi ada banyak hal yang berhasil menjadi kenangan. Dari hal-hal sederhana, obrolan singkat, pekerjaan yang melelahkan, sampai momen-momen kecil yang tanpa sadar membuat hari-hari terasa lebih berarti.
+        </p>
+
+        <p>
+            Di sini aku belajar banyak hal. Bukan hanya tentang pekerjaan dan tanggung jawab, tetapi juga tentang kebersamaan, menghargai waktu, menghadapi setiap proses, dan bertemu dengan orang-orang baru yang akhirnya menjadi bagian dari sebuah cerita.
+        </p>
+
+        <p>
+            Terima kasih untuk setiap bantuan, arahan, candaan, dan kebaikan yang diberikan selama aku berada di sini. Terima kasih karena sudah menjadi bagian dari perjalanan yang mungkin suatu hari nanti akan sangat aku rindukan.
+        </p>
+
+        <p>
+            Pada akhirnya, setiap perjalanan pasti punya akhir. Tapi berakhirnya sebuah perjalanan bukan berarti kenangannya ikut berakhir.
+        </p>
+
+        <div class="ending">
+            Karena beberapa tempat mungkin hanya kita datangi untuk sementara, tetapi kenangannya bisa tinggal jauh lebih lama. 🤍
+            <br><br>
+            "Some moments become memories, and some memories stay forever."
+        </div>
+
+    </div>
+
+</div>
+
 </body>
 </html>
