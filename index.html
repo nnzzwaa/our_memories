@@ -1,147 +1,176 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<div class="container">
-  <h1>Press play & relive the memories🎞️</h1>
-  <p>Scan it. Open it. Keep the memory. ♡</p>
-  <button id="openBtn" onclick="openVideo()">▶ OPEN THIS LITTLE MEMORY</button>
-  <video id="video" controls playsinline>
-    <source src="video.mp4" type="video/mp4">
-    Browser kamu tidak mendukung video.
-  </video>
-  <div class="note">FOR THE FULL EXPERIENCE, LISTEN WITH SOUND</div>
-</div>
-<script>
-function openVideo(){
-  const v=document.getElementById('video');
-  document.getElementById('openBtn').style.display='none';
-  v.style.display='block';
-  v.muted=false;
-  v.play().catch(()=>{ v.controls=true; });
-}
-</script>
-</body>
-</html>
-<!DOCTYPE html>
-<html lang="id">
-<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Our Memories 🤍</title>
 
     <style>
+        * {
+            box-sizing: border-box;
+        }
+
         body {
             margin: 0;
-            padding: 30px 20px;
+            padding: 35px 20px 50px;
             background: #f8f5f2;
             color: #4a4542;
-            font-family: Georgia, serif;
-            text-align: center;
+            font-family: Georgia, "Times New Roman", serif;
         }
 
         .container {
+            width: 100%;
             max-width: 800px;
             margin: auto;
+            text-align: center;
         }
 
         h1 {
-            font-size: 32px;
-            margin-bottom: 8px;
+            margin: 0;
+            font-size: 34px;
+            font-weight: normal;
         }
 
         .subtitle {
-            font-size: 15px;
+            margin-top: 10px;
+            margin-bottom: 28px;
             color: #8a817c;
-            margin-bottom: 30px;
+            font-size: 15px;
+            font-style: italic;
+        }
+
+        .video-section {
+            margin-bottom: 35px;
+        }
+
+        .video-title {
+            margin-bottom: 12px;
+            font-size: 16px;
+            color: #6f6762;
         }
 
         video {
+            display: block;
             width: 100%;
             max-width: 760px;
-            border-radius: 15px;
-            display: block;
-            margin: 0 auto 35px;
+            margin: auto;
+            border-radius: 16px;
+            background: #000;
         }
 
         .story {
-            background: white;
+            background: #ffffff;
             padding: 30px;
             border-radius: 18px;
+            text-align: left;
             line-height: 1.9;
             font-size: 16px;
-            text-align: left;
-            box-shadow: 0 4px 20px rgba(0,0,0,0.06);
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
         }
 
         .story h2 {
-            text-align: center;
             margin-top: 0;
-            margin-bottom: 20px;
+            margin-bottom: 25px;
+            text-align: center;
+            font-size: 23px;
+            font-weight: normal;
         }
 
         .story p {
-            margin-bottom: 18px;
+            margin: 0 0 18px;
         }
 
         .ending {
+            margin-top: 28px;
             text-align: center;
-            margin-top: 30px;
             color: #8a817c;
             font-style: italic;
+            line-height: 1.8;
+        }
+
+        @media (max-width: 600px) {
+            body {
+                padding: 25px 15px 40px;
+            }
+
+            h1 {
+                font-size: 28px;
+            }
+
+            .story {
+                padding: 23px;
+                font-size: 15px;
+            }
         }
     </style>
 </head>
 
 <body>
 
-<div class="container">
+    <div class="container">
 
-    <h1>Our Memories 🤍</h1>
+        <h1>Our Memories 🤍</h1>
 
-    <div class="subtitle">
-        a little place for our precious memories
-    </div>
+        <div class="subtitle">
+            a little place for our precious memories
+        </div>
 
-    <video controls>
-        <source src="video.mp4" type="video/mp4">
-        Browser kamu tidak mendukung video.
-    </video>
 
-    <div class="story">
+        <!-- VIDEO -->
+        <div class="video-section">
 
-        <h2>Thank You For The Memories</h2>
+            <div class="video-title">
+                Open this little memory 🤍
+            </div>
 
-        <p>
-            Terima kasih untuk setiap cerita, tawa, dan kebersamaan yang hadir selama perjalanan ini.
-        </p>
+            <video controls>
+                <source src="video.mp4" type="video/mp4">
+                Browser kamu tidak mendukung video.
+            </video>
 
-        <p>
-            Mungkin waktunya tidak terlalu lama, tetapi ada banyak hal yang berhasil menjadi kenangan. Dari hal-hal sederhana, obrolan singkat, pekerjaan yang melelahkan, sampai momen-momen kecil yang tanpa sadar membuat hari-hari terasa lebih berarti.
-        </p>
+            <div class="subtitle">
+                Let the memories speak. 🤍
+            </div>
 
-        <p>
-            Di sini aku belajar banyak hal. Bukan hanya tentang pekerjaan dan tanggung jawab, tetapi juga tentang kebersamaan, menghargai waktu, menghadapi setiap proses, dan bertemu dengan orang-orang baru yang akhirnya menjadi bagian dari sebuah cerita.
-        </p>
+        </div>
 
-        <p>
-            Terima kasih untuk setiap bantuan, arahan, candaan, dan kebaikan yang diberikan selama aku berada di sini. Terima kasih karena sudah menjadi bagian dari perjalanan yang mungkin suatu hari nanti akan sangat aku rindukan.
-        </p>
 
-        <p>
-            Pada akhirnya, setiap perjalanan pasti punya akhir. Tapi berakhirnya sebuah perjalanan bukan berarti kenangannya ikut berakhir.
-        </p>
+        <!-- TEXT -->
+        <div class="story">
 
-        <div class="ending">
-            Karena beberapa tempat mungkin hanya kita datangi untuk sementara, tetapi kenangannya bisa tinggal jauh lebih lama. 🤍
-            <br><br>
-            "Some moments become memories, and some memories stay forever."
+            <h2>Thank You For The Memories</h2>
+
+            <p>
+                Terima kasih untuk setiap cerita, tawa, dan kebersamaan yang hadir selama perjalanan ini.
+            </p>
+
+            <p>
+                Mungkin waktunya tidak terlalu lama, tetapi ada banyak hal yang berhasil menjadi kenangan. Dari hal-hal sederhana, obrolan singkat, pekerjaan yang melelahkan, sampai momen-momen kecil yang tanpa sadar membuat hari-hari terasa lebih berarti.
+            </p>
+
+            <p>
+                Di sini aku belajar banyak hal. Bukan hanya tentang pekerjaan dan tanggung jawab, tetapi juga tentang kebersamaan, menghargai waktu, menghadapi setiap proses, dan bertemu dengan orang-orang baru yang akhirnya menjadi bagian dari sebuah cerita.
+            </p>
+
+            <p>
+                Terima kasih untuk setiap bantuan, arahan, candaan, dan kebaikan yang diberikan selama aku berada di sini. Terima kasih karena sudah menjadi bagian dari perjalanan yang mungkin suatu hari nanti akan sangat aku rindukan.
+            </p>
+
+            <p>
+                Pada akhirnya, setiap perjalanan pasti punya akhir. Tapi berakhirnya sebuah perjalanan bukan berarti kenangannya ikut berakhir.
+            </p>
+
+            <div class="ending">
+                Karena beberapa tempat mungkin hanya kita datangi untuk sementara,
+                tetapi kenangannya bisa tinggal jauh lebih lama. 🤍
+                <br><br>
+                "Some moments become memories, and some memories stay forever."
+            </div>
+
         </div>
 
     </div>
-
-</div>
 
 </body>
 </html>
